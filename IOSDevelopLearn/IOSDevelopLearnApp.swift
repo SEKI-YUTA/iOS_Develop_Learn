@@ -11,7 +11,7 @@ import SwiftUI
 struct IOSDevelopLearnApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PrefecturesView(prefectures: Prefecture.sampleData)
         }
     }
 }
