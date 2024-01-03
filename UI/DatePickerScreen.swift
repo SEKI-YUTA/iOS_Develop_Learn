@@ -18,7 +18,6 @@ struct DatePickerScreen: View {
     
     var body: some View {
         VStack {
-            
             Label("期間: \(calcDaysDistance(date1: startDate, date2: endDate)) 日", systemImage: "calendar")
             DatePicker(
                     "開始日",
@@ -30,6 +29,7 @@ struct DatePickerScreen: View {
                     selection: $endDate
                 
             )
+            Spacer()
         }
         .padding()
     }
