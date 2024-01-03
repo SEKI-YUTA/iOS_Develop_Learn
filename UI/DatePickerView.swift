@@ -35,7 +35,7 @@ struct DatePickerView: View {
     }
     
     func calcDaysDistance(date1: Date, date2: Date) -> Int {
-        var tmp = date1.timeIntervalSince(date2)/60/60/24
+        let tmp = date1.timeIntervalSince(date2)/60/60/24
         
         return abs(Int(tmp))
     }
