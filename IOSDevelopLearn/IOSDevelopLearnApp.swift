@@ -11,7 +11,8 @@ import SwiftUI
 struct IOSDevelopLearnApp: App {
     var body: some Scene {
         WindowGroup {
-            PrefecturesView(prefectures: Prefecture.sampleData)
+//            PrefecturesView(prefectures: Prefecture.sampleData)
+            DatePickerScreen()
         }
     }
 }

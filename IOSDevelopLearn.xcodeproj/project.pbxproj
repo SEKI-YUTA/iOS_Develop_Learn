@@ -14,6 +14,7 @@
 		8A53B8732B44632300512F4E /* Prefecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A53B8722B44632300512F4E /* Prefecture.swift */; };
 		8A53B8762B4464BE00512F4E /* PrefecturesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A53B8752B4464BE00512F4E /* PrefecturesView.swift */; };
 		8A53B8782B44662700512F4E /* PrefectureDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A53B8772B44662700512F4E /* PrefectureDetail.swift */; };
+		8A53B87A2B45490000512F4E /* DatePickerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A53B8792B45490000512F4E /* DatePickerScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		8A53B8722B44632300512F4E /* Prefecture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prefecture.swift; sourceTree = "<group>"; };
 		8A53B8752B4464BE00512F4E /* PrefecturesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefecturesView.swift; sourceTree = "<group>"; };
 		8A53B8772B44662700512F4E /* PrefectureDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefectureDetail.swift; sourceTree = "<group>"; };
+		8A53B8792B45490000512F4E /* DatePickerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			children = (
 				8A53B8752B4464BE00512F4E /* PrefecturesView.swift */,
 				8A53B8772B44662700512F4E /* PrefectureDetail.swift */,
+				8A53B8792B45490000512F4E /* DatePickerScreen.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 				8A53B8662B4462F900512F4E /* ContentView.swift in Sources */,
 				8A53B8642B4462F900512F4E /* IOSDevelopLearnApp.swift in Sources */,
 				8A53B8762B4464BE00512F4E /* PrefecturesView.swift in Sources */,
+				8A53B87A2B45490000512F4E /* DatePickerScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
