@@ -28,7 +28,7 @@ struct PrefecturesView: View {
         }
         .alert("データの追加", isPresented: $shouldShowDialog) {
             Button("追加") {
-                let newData = Prefecture(name: "東京都", captailName: "新宿区")
+                let newData = Prefecture(name: "東京都", captailName: "新宿区", imageName: nil)
                 prefectures.append(newData)
             }
         } message: {

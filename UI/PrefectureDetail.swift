@@ -10,9 +10,16 @@ import SwiftUI
 struct PrefectureDetail: View {
     let prefecture: Prefecture
     var body: some View {
-        VStack(alignment: .leading) {
-            Text(prefecture.name)
-                .font(.headline)
+        VStack(alignment: .center) {
+            if let imageName = prefecture.imageName {
+                Image(imageName)
+            }
+            HStack {
+                Text(prefecture.name)
+                    .font(.headline)
+                Spacer()
+            }
+            .frame(maxWidth: .infinity)
             HStack {
                 Text("県庁所在地")
                 Spacer()
@@ -20,7 +27,6 @@ struct PrefectureDetail: View {
             }
         }
         .padding()
-        .background(Color.red)
     }
 }
 
