@@ -12,7 +12,7 @@ struct IOSDevelopLearnApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationStack {
-                NavigationLink(destination: DatePickerScreen()) {
+                NavigationLink(destination: DatePickerView()) {
                     NavigationLinkContent(text: "DatePickerView")
                 }
                 NavigationLink(destination: PrefecturesView(prefectures: Prefecture.sampleData)) {

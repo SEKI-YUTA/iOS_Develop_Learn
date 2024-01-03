@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct DatePickerScreen: View {
+struct DatePickerView: View {
     @State private var startDate = Date()
     @State private var endDate = Date()
     private let dateFormatter = DateFormatter()
@@ -42,5 +42,5 @@ struct DatePickerScreen: View {
 }
 
 #Preview {
-    DatePickerScreen()
+    DatePickerView()
 }
