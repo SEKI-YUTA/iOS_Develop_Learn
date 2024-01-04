@@ -18,6 +18,9 @@ struct IOSDevelopLearnApp: App {
                 NavigationLink(destination: PrefecturesView(prefectures: Prefecture.sampleData)) {
                     NavigationLinkContent(text: "PrefecturesView")
                 }
+                NavigationLink(destination: CallApiView()) {
+                    NavigationLinkContent(text: "CallApiView")
+                }
             }
         }
     }
