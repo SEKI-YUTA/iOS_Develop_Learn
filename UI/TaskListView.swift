@@ -11,18 +11,28 @@ import CoreData
 struct TaskListView: View {
     @Environment(\.managedObjectContext) var viewContext
     @FetchRequest(entity: TodoTask.entity(), sortDescriptors: []) var fetchedTasks: FetchedResults<TodoTask>
+    @State var shouldShowAlertDialog = false
+    @State var userInputTitle = ""
+    @State var userInputContent = ""
     var body: some View {
         VStack {
-            Text("Task List")
+            Text("Taskリスト")
                 .font(.title)
+            TextInputRow(userInputValue: $userInputTitle, text: "タイトル")
+            TextInputRow(userInputValue: $userInputContent, text: "詳細")
             Button(
                 action: {
                     do {
+                        if userInputTitle == "" {
+                            shouldShowAlertDialog = true
+                            return
+                        }
                         let data = TodoTask(context: viewContext)
                         data.id = UUID()
-                        data.title = "hogehoge"
+                        data.title = userInputTitle
                         data.content = "this is description text"
                         try viewContext.save()
+                        resetUserInput()
                     } catch {
                         print(error)
                     }
@@ -37,6 +47,17 @@ struct TaskListView: View {
                 Text("\(title)")
             }
         }
+        .padding()
+        .alert("タイトルが入力されてません", isPresented: $shouldShowAlertDialog) {
+            
+        } message: {
+            Text("タイトルを入力してください")
+        }
+    }
+    
+    func resetUserInput() {
+        userInputTitle = ""
+        userInputContent = ""
     }
 }
 

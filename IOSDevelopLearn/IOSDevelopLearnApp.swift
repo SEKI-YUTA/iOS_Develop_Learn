@@ -28,6 +28,11 @@ struct IOSDevelopLearnApp: App {
                 ) {
                     NavigationLinkContent(text: "TaskListView")
                 }
+                NavigationLink(
+                    destination: DialogDemoView()
+                ) {
+                    NavigationLinkContent(text: "DialogDemoView")
+                }
             }
         }
     }

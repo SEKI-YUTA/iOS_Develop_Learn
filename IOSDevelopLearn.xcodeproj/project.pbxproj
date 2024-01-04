@@ -22,6 +22,9 @@
 		8A53B88A2B464E1400512F4E /* Models.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8A53B8882B464E1400512F4E /* Models.xcdatamodeld */; };
 		8A53B88C2B464F6800512F4E /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A53B88B2B464F6800512F4E /* TaskListView.swift */; };
 		8A53B88E2B465A6B00512F4E /* PersistanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A53B88D2B465A6B00512F4E /* PersistanceController.swift */; };
+		8A53B8922B46661F00512F4E /* DialogDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A53B8912B46661F00512F4E /* DialogDemoView.swift */; };
+		8A53B8942B46693B00512F4E /* CustomDialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A53B8932B46693B00512F4E /* CustomDialogView.swift */; };
+		8A53B8962B466C6E00512F4E /* TextInputRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A53B8952B466C6E00512F4E /* TextInputRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +44,9 @@
 		8A53B8892B464E1400512F4E /* Task.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Task.xcdatamodel; sourceTree = "<group>"; };
 		8A53B88B2B464F6800512F4E /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
 		8A53B88D2B465A6B00512F4E /* PersistanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceController.swift; sourceTree = "<group>"; };
+		8A53B8912B46661F00512F4E /* DialogDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogDemoView.swift; sourceTree = "<group>"; };
+		8A53B8932B46693B00512F4E /* CustomDialogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDialogView.swift; sourceTree = "<group>"; };
+		8A53B8952B466C6E00512F4E /* TextInputRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +117,9 @@
 				8A53B87C2B4550BA00512F4E /* NavigationLinkContent.swift */,
 				8A53B8832B463EBF00512F4E /* CallApiView.swift */,
 				8A53B88B2B464F6800512F4E /* TaskListView.swift */,
+				8A53B8912B46661F00512F4E /* DialogDemoView.swift */,
+				8A53B8932B46693B00512F4E /* CustomDialogView.swift */,
+				8A53B8952B466C6E00512F4E /* TextInputRow.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -203,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A53B8732B44632300512F4E /* Prefecture.swift in Sources */,
+				8A53B8922B46661F00512F4E /* DialogDemoView.swift in Sources */,
 				8A53B88A2B464E1400512F4E /* Models.xcdatamodeld in Sources */,
 				8A53B8782B44662700512F4E /* PrefectureDetail.swift in Sources */,
 				8A53B8662B4462F900512F4E /* ContentView.swift in Sources */,
@@ -210,6 +220,8 @@
 				8A53B88E2B465A6B00512F4E /* PersistanceController.swift in Sources */,
 				8A53B8762B4464BE00512F4E /* PrefecturesView.swift in Sources */,
 				8A53B8802B463B7700512F4E /* ApiProxy.swift in Sources */,
+				8A53B8942B46693B00512F4E /* CustomDialogView.swift in Sources */,
+				8A53B8962B466C6E00512F4E /* TextInputRow.swift in Sources */,
 				8A53B8822B463CB100512F4E /* Post.swift in Sources */,
 				8A53B87D2B4550BA00512F4E /* NavigationLinkContent.swift in Sources */,
 				8A53B87A2B45490000512F4E /* DatePickerView.swift in Sources */,
