@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct IOSDevelopLearnApp: App {
+    let persistenceCntroller = PersistanceController()
     var body: some Scene {
         WindowGroup {
             NavigationStack {
@@ -20,6 +21,12 @@ struct IOSDevelopLearnApp: App {
                 }
                 NavigationLink(destination: CallApiView()) {
                     NavigationLinkContent(text: "CallApiView")
+                }
+                NavigationLink(
+                    destination: TaskListView()
+                        .environment(\.managedObjectContext, persistenceCntroller.container.viewContext)
+                ) {
+                    NavigationLinkContent(text: "TaskListView")
                 }
             }
         }
