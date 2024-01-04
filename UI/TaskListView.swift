@@ -44,7 +44,8 @@ struct TaskListView: View {
             )
             List(fetchedTasks) { todo in
                 let title = todo.title ?? "no title"
-                Text("\(title)")
+                let content = todo.content ?? "no description provided"
+                TaskListItem(title: title, content: content)
             }
         }
         .padding()
