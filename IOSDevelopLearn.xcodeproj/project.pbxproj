@@ -113,16 +113,13 @@
 		8A53B8742B4464AC00512F4E /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				8A53B8992B4672A400512F4E /* Component */,
 				8A53B8752B4464BE00512F4E /* PrefecturesView.swift */,
 				8A53B8772B44662700512F4E /* PrefectureDetail.swift */,
 				8A53B8792B45490000512F4E /* DatePickerView.swift */,
-				8A53B87C2B4550BA00512F4E /* NavigationLinkContent.swift */,
 				8A53B8832B463EBF00512F4E /* CallApiView.swift */,
 				8A53B88B2B464F6800512F4E /* TaskListView.swift */,
 				8A53B8912B46661F00512F4E /* DialogDemoView.swift */,
-				8A53B8932B46693B00512F4E /* CustomDialogView.swift */,
-				8A53B8952B466C6E00512F4E /* TextInputRow.swift */,
-				8A53B8972B466FD300512F4E /* TaskListItem.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -142,6 +139,17 @@
 				8A53B88D2B465A6B00512F4E /* PersistanceController.swift */,
 			);
 			path = LocalData;
+			sourceTree = "<group>";
+		};
+		8A53B8992B4672A400512F4E /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				8A53B8972B466FD300512F4E /* TaskListItem.swift */,
+				8A53B8952B466C6E00512F4E /* TextInputRow.swift */,
+				8A53B8932B46693B00512F4E /* CustomDialogView.swift */,
+				8A53B87C2B4550BA00512F4E /* NavigationLinkContent.swift */,
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
